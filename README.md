@@ -31,7 +31,7 @@ Since the source dataset does not contain explicit funnel stages, a proxy funnel
 - Audience Segmentation: Identify high-converting customer groups
 - Campaign Effectiveness Analysis: Evaluate impact of contact frequency
 - Seasonal Trend Analysis: Identify high-performing campaign periods
-- Visualization: Build an interactive Power BI dashboard for business insights
+- Visualization: Build an interactive dashboard for business insights
 
 ---
 
@@ -78,7 +78,7 @@ This approach allows meaningful funnel analysis despite the absence of native CR
 ## Project Structure
 
 ```text
-FUTURE_DS_03_Marketing_Funnel_Converion_Performance_Analysis/
+FUTURE_DS_03_Marketing_Funnel_Conversion_Performance_Analysis/
 ├── Dashboard1.png
 ├── Dashboard2.png
 ├── Dashboard3.png
@@ -104,7 +104,7 @@ FUTURE_DS_03_Marketing_Funnel_Converion_Performance_Analysis/
 
 **Option 2: PDF Report**
 
-- Open Marketing_Funnel_Analysis.pdf for static viewing
+- Open Marketing_funnel_analysis_dashboard.pdf for static viewing
 - Suitable for stakeholder presentations
 
 ---
@@ -226,4 +226,4 @@ FUTURE_DS_03_Marketing_Funnel_Converion_Performance_Analysis/
 
 ## Business Impact
 
-This project demonstrates how marketing data can be transformed into actionable business insights by identifying conversion bottlenecks, improving lead quality, optimizing channel strategy, and increasing marketing ROI through data-driven decision-making.
+This project demonstrates how marketing data can be transformed into actionable business insights by identifying conversion bottlenecks, improving lead quality, optimizing channel strategy, and increasing marketing ROI through data-driven decision-making. The analysis identifies the largest funnel bottlenecks, highlights high-performing customer segments, and provides actionable recommendations for improving campaign conversion efficiency.
