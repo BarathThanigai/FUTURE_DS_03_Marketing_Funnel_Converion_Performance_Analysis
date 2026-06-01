@@ -4,7 +4,7 @@
 <head>
 <meta charset='UTF-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<title>Marketing Funnel Dashboard</title>
+<title>Marketing Funnel and Conversion Performance Analysis Dashboard</title>
 <script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script>
 <style>
 body { font-family: Arial, sans-serif; margin: 0; background: #f4f7fb; color: #1f2937; }
@@ -34,7 +34,7 @@ th { background: #f8fafc; }
 </head>
 <body>
 <div class='header'>
-<h1>Marketing and Lead Funnel Dashboard</h1>
+<h1>Marketing Funnel & Conversion Performance Analysis</h1>
 <p>This dashboard analyzes how prospects progress from initial outreach to engagement, qualification, and final conversion using the bank marketing dataset as a lead funnel proxy. It highlights drop-off points, channel quality, timing effects, campaign pressure, and high-converting audience segments.</p>
 </div>
 <div class='wrap'>
@@ -42,7 +42,8 @@ th { background: #f8fafc; }
 <div class='card'><div class='kpi-value'>41,188</div><div class='kpi-label'>Total Contacts</div></div>
 <div class='card'><div class='kpi-value'>49.7%</div><div class='kpi-label'>Contact to Engagement</div></div>
 <div class='card'><div class='kpi-value'>15.1%</div><div class='kpi-label'>Engagement to Qualification</div></div>
-<div class='card'><div class='kpi-value'>4.5%</div><div class='kpi-label'>Overall Contact to Customer</div></div>
+<div class='card'><div class='kpi-value'>11.3%</div><div class='kpi-label'>Actual Campaign Conversion Rate</div></div>
+<div class='card'><div class='kpi-value'>4.5%</div><div class='kpi-label'>Funnel Conversion Rate</div></div>
 </div>
 
 <div class='grid2'>
@@ -89,7 +90,7 @@ th { background: #f8fafc; }
 <div class='section-title'>Detailed Channel Funnel Metrics</div>
 <div class='table-wrap'>
 <table>
-<thead><tr><th>Channel</th><th>Contacted</th><th>Engagement Rate</th><th>Qualification Rate</th><th>Close Rate</th><th>Overall Conversion</th><th>Avg Duration</th></tr></thead>
+<thead><tr><th>Channel</th><th>Contacted</th><th>Engagement Rate</th><th>Qualification Rate</th><th>Close Rate</th><th>Funnel Conversion</th><th>Avg Duration</th></tr></thead>
 <tbody>
 <tr><td>cellular</td><td>26,144</td><td>50.28%</td><td>21.77%</td><td>40.92%</td><td><b>4.48%</b></td><td>263.5</td></tr><tr><td>telephone</td><td>15,044</td><td>48.77%</td><td>3.07%</td><td>41.33%</td><td><b>0.62%</b></td><td>249.2</td></tr>
 </tbody></table>
@@ -101,7 +102,7 @@ th { background: #f8fafc; }
 <div class='rec-grid'>
 <div class='rec-box'>
 <h3>Recommendations to improve conversions</h3>
-<p>Refocus acquisition toward higher-intent channels, especially cellular-style outreach, because it produces much stronger overall conversion. Rework qualification criteria and nurture flows for engaged leads because that is where the largest leak occurs. Introduce lead scoring before high-cost sales follow-up so the team spends time on prospects with signs of prior success or repeat engagement.</p>
+<p>Refocus acquisition toward higher-intent channels, especially cellular outreach, because it produces much stronger funnel conversion performance. Rework qualification criteria and nurture flows for engaged leads because that is where the largest leak occurs. Introduce lead scoring before high-cost sales follow-up so the team spends time on prospects with signs of prior success or repeat engagement.</p>
 </div>
 <div class='rec-box'>
 <h3>Recommended optimization priorities</h3>
@@ -109,7 +110,7 @@ th { background: #f8fafc; }
 </div>
 </div>
 
-<div class='footer-note'>Dashboard assumption: because the source file contains outreach and conversion outcomes rather than a native web analytics funnel, the dashboard models a practical startup-style funnel as Contacted → Engaged → Qualified → Customer using call duration, prior contact outcomes, and final subscription outcome.</div>
+<div class='footer-note'>Methodology Note: The source dataset contains outreach interactions and conversion outcomes rather than explicit funnel stages. To enable funnel analysis, a proxy funnel was constructed as Contacted → Engaged → Qualified → Customer using call duration, prior campaign outcomes, and final subscription status.</div>
 </div>
 <script>
 var funnelData = [{"stage": "Contacted", "count": 41188, "conversion_rate": 1.0, "drop_off_rate": 0.0, "conversion_pct": 100.0, "dropoff_pct": 0.0}, {"stage": "Engaged", "count": 20483, "conversion_rate": 0.4973050403030009, "drop_off_rate": 0.5026949596969992, "conversion_pct": 49.7, "dropoff_pct": 50.3}, {"stage": "Qualified", "count": 3087, "conversion_rate": 0.15071034516428258, "drop_off_rate": 0.8492896548357174, "conversion_pct": 15.1, "dropoff_pct": 84.9}, {"stage": "Customer", "count": 1264, "conversion_rate": 0.4094590217039197, "drop_off_rate": 0.5905409782960803, "conversion_pct": 40.9, "dropoff_pct": 59.1}];
