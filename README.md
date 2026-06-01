@@ -155,7 +155,7 @@ FUTURE_DS_03_Marketing_Funnel_Conversion_Performance_Analysis/
 
 ### 8. Dashboard Creation
 
-- Built interactive Power BI visuals
+- Built interactive dashboard visualizations using HTML
 - Added KPI cards and funnel metrics
 - Developed executive-level business insights
 
@@ -219,8 +219,10 @@ FUTURE_DS_03_Marketing_Funnel_Conversion_Performance_Analysis/
 
 ## Tools Used
 
-- Julius AI for data analysis
+- Julius AI (for data analysis)
 - HTML
+- CSS
+- JavaScript
 
 ---
 
